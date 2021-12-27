@@ -6,9 +6,12 @@ import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.lr2.databinding.FragmentBlankBinding
 import com.example.lr2.databinding.FragmentNotificationsBinding
+import com.example.lr2.ui.notifications.NotificationsViewModel
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,6 +31,9 @@ class BlankFragment : Fragment() {
     private var _binding: FragmentBlankBinding? = null
     private val binding get() = _binding!!
 
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -46,7 +52,9 @@ class BlankFragment : Fragment() {
 //        binding.setOnClickListener {
 //            findNavController().navigate(R.id.action_navigation_notifications_to_blankFragment)
 //        }
-        return inflater.inflate(R.layout.fragment_blank, container, false)
+       return inflater.inflate(R.layout.fragment_blank, container, false)
+
+
     }
 
 
